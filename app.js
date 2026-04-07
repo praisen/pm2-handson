@@ -5,7 +5,7 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end(`Hello from PM2 app\nEnvironment: ${NODE_ENV}\nPort: ${PORT}\nTime: ${new Date().toISOString()}\n`);
+  res.end(`Hello from PM2 app - version 2\nEnvironment: ${NODE_ENV}\nPort: ${PORT}\nTime: ${new Date().toISOString()}\n`);
 });
 
 server.listen(PORT, () => {
